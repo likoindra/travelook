@@ -1,0 +1,61 @@
+.Container {
+  padding-inline: 70px;
+  padding-block: 20px;
+
+  @media (max-width: 425px) {
+    padding-inline: 20px
+  }
+
+  @media (max-width: 375px) {
+    padding-right: 20px;
+  }
+
+//   @media (max-width: 280px) {
+//     padding-right: 0;
+//   }
+ 
+  .Wrapper {
+
+    @media (max-width: 320px) {
+
+    }
+
+    .Navigation {
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+
+        img {
+            width: 209px;
+            height: 60px;
+            cursor: pointer;
+            
+            @media (max-width: 320px) {
+                width: 100px;
+                height: 40px;
+            }
+        }
+
+        button {
+            text-transform: none;
+            // min-width: 130px;
+            width: 130px;
+            height: 55px;
+            background: #FFFFFF;
+            border: 1px solid #1E1E1E;
+            color: #1E1E1E;
+            font-size: 14px;
+            font-weight: 500;
+
+            @media (max-width: 425px) {
+                width: 100px;
+                height: 40px;
+            }
+
+            @media (max-width: 375px) {
+                width: 80px;
+            }
+        }
+    }
+  }
+}
