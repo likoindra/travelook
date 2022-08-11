@@ -8,6 +8,7 @@ export { default as HOMEPAGE_LOGO_3 } from "./Home3.png";
 export { default as DETAIL_PRODUCT_IMAGE } from './DetailProduct.png';
 export { default as CHECKOUT_IMAGE } from './CheckoutImage.png';
 export { default as LOGIN_ICON} from './LoginIcon.png';
+export { default as GOOGLE_ICON} from './GoogleIcon.png';
 
 export { default as FOOTER_LOGO_1 } from './mamikos.png';
 export { default as FOOTER_LOGO_2 } from './rd.png';
