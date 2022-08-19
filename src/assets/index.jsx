@@ -1,4 +1,9 @@
 export { default as TRAVELOOK_LOGO } from "./Logo.png";
+export { default as TRAVELOOK_LOGO_WHITE } from "./Logo-White.png";
+export { default as TRAVELOOK_LOGO_MINI } from "./Logo-Mini.png";
+export { default as ICON_CLOSE } from './close.svg';
+export { default as ICON_MENU } from './menu.svg';
+
 
 export { default as BANNER_LOGO } from "./BannerMain.png";
 export { default as HOMEPAGE_LOGO_1} from "./Home1.png";
@@ -8,6 +13,7 @@ export { default as HOMEPAGE_LOGO_3 } from "./Home3.png";
 export { default as DETAIL_PRODUCT_IMAGE } from './DetailProduct.png';
 export { default as CHECKOUT_IMAGE } from './CheckoutImage.png';
 export { default as LOGIN_ICON} from './LoginIcon.png';
+export { default as GOOGLE_ICON} from './GoogleIcon.png';
 
 export { default as FOOTER_LOGO_1 } from './mamikos.png';
 export { default as FOOTER_LOGO_2 } from './rd.png';

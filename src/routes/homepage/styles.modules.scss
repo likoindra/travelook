@@ -1,0 +1,11 @@
+.Container {
+  width: 100%;
+  overflow: hidden;
+
+  .BoxWidth {
+    width: 100%;
+    @media (min-width: 1700px) {
+      max-width: 1280px;
+    }
+  }
+}
