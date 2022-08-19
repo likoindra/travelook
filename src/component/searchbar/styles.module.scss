@@ -1,0 +1,79 @@
+.GuestsControl {
+  display: flex;
+  align-items: center;
+  column-gap: 100px;
+  justify-content: space-between;
+  padding: 20px 15px;
+  p {
+    margin: 0;
+  }
+  & > :last-child {
+    display: flex;
+    column-gap: 15px;
+    align-items: center;
+  }
+  .IconButton {
+    cursor: pointer;
+    border: 1px solid #000000;
+    color: black;
+    width: 25px;
+    height: 25px;
+    border-radius: 50%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 14px;
+
+    transition: 0.3s;
+  }
+  .IconButton:hover {
+    background-color: #e1e2e3;
+  }
+  .IconButton:active {
+    transform: scale(85%);
+    transition: 0.3s;
+    z-index: 2;
+  }
+}
+.Container {
+  p {
+    margin: 0;
+  }
+  height: 77px;
+  display: flex;
+  .Content {
+    padding: 0 30px;
+    width: calc(860px - 119px);
+    box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.05);
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    .ContentSection {
+      & > :first-child {
+        font-weight: 400;
+        font-size: 11px;
+        margin-bottom: 3px;
+        color: #898b8f;
+      }
+
+      .ContentLabel {
+        display: flex;
+        align-items: center;
+        column-gap: 5px;
+        .DatePicker {
+          display: flex;
+          align-items: center;
+          transform: translateX(-10px);
+          button {
+            margin: 0;
+            padding: 0;
+            margin-right: 5px;
+          }
+        }
+        & > :first-child {
+          color: #ff704d;
+        }
+      }
+    }
+  }
+}
