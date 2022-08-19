@@ -1,4 +1,4 @@
-import React, { Fragment, useState } from "react";
+import React, { useState } from "react";
 import Styles from "./styles.module.scss";
 import { TRAVELOOK_LOGO, LOGIN_ICON, GOOGLE_ICON } from "../../assets";
 import {
@@ -9,8 +9,11 @@ import {
 } from "@mui/material";
 import Visibility from "@mui/icons-material/Visibility";
 import VisibilityOff from "@mui/icons-material/VisibilityOff";
+import { useNavigate } from "react-router";
 
 const LoginComponent = () => {
+  const navigate = useNavigate();
+
   const [values, setValues] = useState({
     firstName: "",
     lastName: "",
@@ -43,10 +46,12 @@ const LoginComponent = () => {
     });
   };
 
+  const handleToHomepage = () => navigate('/')
+
   return (
     <div className={Styles.Container}>
       <div className={Styles.Wrapper}>
-        <div className={Styles.Navigation}>
+        <div className={Styles.Navigation} onClick={handleToHomepage}>
           <img src={TRAVELOOK_LOGO} alt="" />
         </div>
         <div className={Styles.Content}>
@@ -178,7 +183,7 @@ const LoginComponent = () => {
                 {values.isSignUp ? (
                   <span>Already have an account ?</span>
                 ) : (
-                  <span>Dont have an accout ? Sign up</span>
+                  <span>Dont have an account ? Sign up</span>
                 )}
               </div>
               {/* <div className={Styles.Forgot}>

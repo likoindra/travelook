@@ -1,4 +1,9 @@
 export { default as TRAVELOOK_LOGO } from "./Logo.png";
+export { default as TRAVELOOK_LOGO_WHITE } from "./Logo-White.png";
+export { default as TRAVELOOK_LOGO_MINI } from "./Logo-Mini.png";
+export { default as ICON_CLOSE } from './close.svg';
+export { default as ICON_MENU } from './menu.svg';
+
 
 export { default as BANNER_LOGO } from "./BannerMain.png";
 export { default as HOMEPAGE_LOGO_1} from "./Home1.png";
